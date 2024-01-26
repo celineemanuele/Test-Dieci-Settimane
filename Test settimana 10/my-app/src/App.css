@@ -65,39 +65,53 @@ html {
 
 .icon-temp { 
   font-size: 3rem; 
-  font-weight: 700; 
   color: #1e2432; 
   text-align: center; 
   
 } 
 
-
 .deg { 
   font-size: 1rem; 
   vertical-align: super; 
+  font-weight: 400; 
 } 
 
 .Container-Detail{
-  background-color: rgb(232, 237, 248);
+  background-color: rgb(234, 239, 250);
   padding: 1rem;
-  display: flex;
-  justify-content: center;
   border-radius: 10px; 
+  display: flex;
+  /*flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  justify-content: space-between;
+  align-items:center;
 }
 
+
 .des-wind  { 
-  padding: 2rem;
+  padding: 0.8rem;
   font-weight: 500; 
   color: #666; 
   background-color: white;
   border-radius: 10px; 
+  display: flex;
 } 
+
+.p{
+  padding: 0.2rem;
+}
+
+.icons{
+}
 
 .pressure { 
   font-weight: 500; 
   color: #666; 
   background-color: white;
   border-radius: 10px; 
+  display: flex;
 }
 
 .sunset { 
@@ -105,7 +119,7 @@ html {
   color: #666; 
   background-color: white;
   border-radius: 10px; 
-  flex-wrap: wrap ;
+  display: flex;
 }
 
 .sunrise { 
@@ -113,6 +127,7 @@ html {
   color: #666; 
   background-color: white;
   border-radius: 10px; 
+  display: flex;
 }
 
 .humidity { 
@@ -120,10 +135,19 @@ html {
   color: #666; 
   background-color: white;
   border-radius: 10px;  
+  display: flex;
 }
 
 .wi{
   color: blue;
+}
+
+.red{
+  color: red;
+}
+
+.orange{
+  color:orangered;
 }
 
 

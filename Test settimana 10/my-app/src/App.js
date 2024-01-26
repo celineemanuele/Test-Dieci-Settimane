@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faFrown } from '@fortawesome/free-solid-svg-icons'; 
 import {Spinner} from 'react-bootstrap';
+import { WiSunrise,WiSunset,WiThermometer,WiStrongWind, WiHumidity } from "react-icons/wi";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
   
@@ -130,23 +131,32 @@ function App() {
                     <div className='Container-Detail'>
                       <div className="Di">
                         <div className="des-wind"> 
-                            <p>Wind Speed: {weather.data.wind.speed}m/s</p> 
-                            <i class="bi bi-wind"></i>
+                            <div className='p'>
+                                <p>Wind Speed:</p> 
+                                <p>{weather.data.wind.speed} m/s</p> 
+                            </div>
+                            <WiStrongWind  className='icons wi'/>
                         </div> 
-                        <div className="humidity"> 
-                            <p>Humidity: {weather.data.main.humidity}%</p> 
+                        <div className="humidity">
+                            <div> 
+                            <p>Humidity:</p>
+                            <p>{weather.data.main.humidity}%</p> 
+                            </div>
+                            <WiHumidity className='icons wi'/>
                         </div> 
                         <div className="pressure"> 
                             <p>Pressure: {weather.data.main.pressure}</p> 
-                            <i class="bi bi-thermometer-half"></i>
+                            <WiThermometer className='icons red'/>
                         </div>
                         <div className="sunset"> 
                             <p>Sunset: {weather.data.sys.sunset}</p> 
-                            <i class="bi bi-sunset"></i>
+                            <WiSunset className='icons orange'/>
+                            
                         </div>
                         <div className="sunrise"> 
                             <p>Sunrise: {weather.data.sys.sunrise}</p> 
-                            <i class="bi bi-sunrise"></i>
+                            <WiSunrise className='icons orange'/>
+                            
                         </div>
                         </div>
                     </div>
