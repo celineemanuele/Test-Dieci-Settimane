@@ -132,31 +132,48 @@ function App() {
                       <div className="Di">
                         <div className="des-wind"> 
                             <div className='p'>
-                                <p>Wind Speed:</p> 
+                                <p><b>Wind Speed:</b></p> 
                                 <p>{weather.data.wind.speed} m/s</p> 
                             </div>
-                            <WiStrongWind  className='icons wi'/>
+                            <div className='icons wi'>
+                            <WiStrongWind/>
+                            </div>
                         </div> 
                         <div className="humidity">
                             <div> 
-                            <p>Humidity:</p>
+                            <p><b>Humidity:</b></p>
                             <p>{weather.data.main.humidity}%</p> 
                             </div>
-                            <WiHumidity className='icons wi'/>
+                            <div className='icons wi'>
+                            <WiHumidity />
+                            </div>
                         </div> 
                         <div className="pressure"> 
-                            <p>Pressure: {weather.data.main.pressure}</p> 
-                            <WiThermometer className='icons red'/>
+                            <div>
+                                <p><b>Pressure:</b> </p>
+                                <p>{weather.data.main.pressure}</p> 
+                            </div>
+                            <div className='icons red'>
+                                <WiThermometer />
+                            </div>
                         </div>
                         <div className="sunset"> 
-                            <p>Sunset: {weather.data.sys.sunset}</p> 
-                            <WiSunset className='icons orange'/>
-                            
+                            <div>
+                                <p><b>Sunset: </b></p>
+                                <p>{weather.data.sys.sunset}</p> 
+                            </div>
+                            <div className='icons orange'>
+                                <WiSunset />
+                            </div>   
                         </div>
                         <div className="sunrise"> 
-                            <p>Sunrise: {weather.data.sys.sunrise}</p> 
-                            <WiSunrise className='icons orange'/>
-                            
+                            <div>
+                                <p><b>Sunrise:</b></p>
+                                <p> {weather.data.sys.sunrise}</p> 
+                            </div>
+                            <div className='icons orange'>
+                                <WiSunrise />
+                            </div>
                         </div>
                         </div>
                     </div>
